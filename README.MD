@@ -1,6 +1,6 @@
 # ZCSCommonLibrary
 
-![Python package](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Python%20package/badge.svg) | ![CodeQL](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/CodeQL/badge.svg)
+![Python package](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Python%20package/badge.svg) ![CodeQL](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/CodeQL/badge.svg)
 
 A Common Library For Use In Computer Science Projects
 
