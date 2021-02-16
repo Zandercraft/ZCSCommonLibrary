@@ -2,10 +2,6 @@
 
 The ZCSCommonLib library exists as a general library to provide various utilities, generally useful in computer science courses. All are welcome to contribute to the library (through pull requests) and add general (or more complicated) functions to it.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
 ### Importing The Library
 
 You can use the following code to import the ZCSCommonLib library to your Python projects.
