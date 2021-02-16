@@ -7,6 +7,12 @@ A Common Library For Use In Computer Science Projects
 **Current Version:** 0.1.0 <br />
 **License**: Mozilla Public License Version 2.0
 
+### Importing The Library
+```python
+from zcscommonlib import functions as zcs
+# Then use the functions as zcs.function()
+```
+
 ### Build The Library
 Prepare the library for development and build it.
 ```commandline
@@ -52,3 +58,16 @@ num (int): The number of the month.
 
 #### Returns
 The month's name in string format.
+
+### Input Verify - functions.inputverify()
+#### Purpose 
+Gets the input from a user, persisting until the input of the right type is received with an optional input
+message and error message.
+
+#### Args
+typein (str): The type of input to require of the user (int, float, str, bool).
+inputmsg (str): The message to display to the user when getting input.
+errormsg (str): The error to log to console when an input of the wrong type is given.
+
+#### Returns
+The input provided from the user in the desired format.
