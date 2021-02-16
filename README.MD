@@ -43,10 +43,10 @@ earth (specified in decimal degrees), returns the distance in
 meters.
 
 #### Args (In order)
-lon1 (float): The longitude of the first point.<br />
-lat1: (float): The latitude of the first point.<br />
-lon2: (float): The longitude of the second point.<br />
-lat2: (float): The latitude of the second point.<br />
+**lon1 (float)**: The longitude of the first point.<br />
+**lat1: (float)**: The latitude of the first point.<br />
+**lon2: (float)**: The longitude of the second point.<br />
+**lat2: (float)**: The latitude of the second point.<br />
 
 #### Returns
 The distance in meters between the two sets of coordinates.
@@ -58,7 +58,7 @@ The distance in meters between the two sets of coordinates.
 Takes an input of an integer and returns a string of the month of that number.
 
 #### Args
-num (int): The number of the month.
+**num (int)**: The number of the month.
 
 #### Returns
 The month's name in string format.
@@ -71,9 +71,9 @@ Gets the input from a user, persisting until the input of the right type is rece
 message and error message.
 
 #### Args
-typein (str): The type of input to require of the user (int, float, str, bool).<br />
-inputmsg (str): The message to display to the user when getting input.<br />
-errormsg (str): The error to log to console when an input of the wrong type is given.<br />
+**typein (str)**: The type of input to require of the user (int, float, str, bool).<br />
+**inputmsg (str)**: The message to display to the user when getting input.<br />
+**errormsg (str)**: The error to log to console when an input of the wrong type is given.<br />
 
 #### Returns
 The input provided from the user in the desired format.
