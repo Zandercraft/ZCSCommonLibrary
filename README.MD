@@ -71,9 +71,9 @@ Gets the input from a user, persisting until the input of the right type is rece
 message and error message.
 
 #### Args
-typein (str): The type of input to require of the user (int, float, str, bool).
-inputmsg (str): The message to display to the user when getting input.
-errormsg (str): The error to log to console when an input of the wrong type is given.
+typein (str): The type of input to require of the user (int, float, str, bool).<br />
+inputmsg (str): The message to display to the user when getting input.<br />
+errormsg (str): The error to log to console when an input of the wrong type is given.<br />
 
 #### Returns
 The input provided from the user in the desired format.
