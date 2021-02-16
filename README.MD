@@ -1,6 +1,5 @@
 # ZCSCommonLibrary
 
----
 A Common Library For Use In Computer Science Projects
 
 **PIP Package**: zcscommonlib <br />
@@ -32,9 +31,10 @@ Below is the documentation for all the functions available in the library.
 
 ## Functions Module
 
----
 Currently the only module, provides all functions in the library.
 ### Haversine - functions.haversine()
+
+---
 #### Purpose 
 Calculates the great circle distance between two points on the
 earth (specified in decimal degrees), returns the distance in
@@ -50,6 +50,8 @@ lat2: (float): The latitude of the second point.<br />
 The distance in meters between the two sets of coordinates.
 
 ### Month - functions.month()
+
+---
 #### Purpose 
 Takes an input of an integer and returns a string of the month of that number.
 
@@ -60,6 +62,8 @@ num (int): The number of the month.
 The month's name in string format.
 
 ### Input Verify - functions.inputverify()
+
+---
 #### Purpose 
 Gets the input from a user, persisting until the input of the right type is received with an optional input
 message and error message.
