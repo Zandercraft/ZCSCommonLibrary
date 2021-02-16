@@ -1,7 +1,8 @@
 # ZCSCommonLibrary
 
-A Common Library For Use In Computer Science Projects
 ![Python package](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Python%20package/badge.svg)
+
+A Common Library For Use In Computer Science Projects
 
 **PIP Package**: zcscommonlib <br />
 **Current Version:** 0.1.0 <br />
