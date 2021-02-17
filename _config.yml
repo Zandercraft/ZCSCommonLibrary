@@ -1,3 +1,6 @@
 theme: jekyll-theme-leap-day
 timezone: America/Toronto
 show_downloads: true
+github:
+  zip_url: https://github.com/Zandercraft/ZCSCommonLibrary/zipball/master
+  tar_url: https://github.com/Zandercraft/ZCSCommonLibrary/tarball/master
