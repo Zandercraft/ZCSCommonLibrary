@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 setup(
     name='zcscommonlib',
     packages=find_packages(include=['zcscommonlib']),
-    version='0.3.0',
+    version='0.3.1',
     description='A Common Library For Use In Computer Science Projects',
     long_description="README.MD",
     long_description_content_type="text/markdown",
