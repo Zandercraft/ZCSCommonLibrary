@@ -1,11 +1,11 @@
 # ZCSCommonLibrary
 
-![Python package](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Python%20package/badge.svg) ![CodeQL](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/CodeQL/badge.svg) ![PyPi Package Deployment](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Upload%20Python%20Package/badge.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/Zandercraft/ZCSCommonLibrary) ![Python package](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Python%20package/badge.svg) ![CodeQL](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/CodeQL/badge.svg) ![PyPi Package Deployment](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Upload%20Python%20Package/badge.svg)
 
 A Common Library For Use In Computer Science Projects
 
 **PIP Package**: zcscommonlib <br />
-**Current Version:** 0.3.2 <br />
+**Current Version:** https://img.shields.io/github/v/release/Zandercraft/ZCSCommonLibrary?include_prereleases <br />
 **License**: Mozilla Public License Version 2.0
 
 ### Importing The Library
