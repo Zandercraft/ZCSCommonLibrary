@@ -1,22 +1,24 @@
 from setuptools import find_packages, setup
+import pypandoc
 
-# read the contents of the README file
-with open('README.md', encoding='utf-8') as f:
-    long_description = f.read()
+try:
+    description = pypandoc.convert('README.md', 'rst')
+except (IOError, ImportError):
+    description = open('README.md').read()
 
 setup(
     name='zcscommonlib',
     packages=find_packages(include=['zcscommonlib']),
     version='0.3.2',
     description='A Common Library For Use In Computer Science Projects',
-    long_description=long_description,
+    long_description=description,
     long_description_content_type="text/markdown",
     author='Zandercraft',
     url='https://github.com/Zandercraft/ZCSCommonLibrary',
     download_url='https://github.com/Zandercraft/ZCSCommonLibrary/archive/0.2.0.tar.gz',
     license='MPL 2.0',
     install_requires=[],
-    setup_requires=['pytest-runner'],
+    setup_requires=['pytest-runner', 'pypandoc'],
     tests_require=['pytest==6.2.2'],
     test_suite='tests',
     classifiers=[
