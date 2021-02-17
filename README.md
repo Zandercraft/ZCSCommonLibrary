@@ -1,6 +1,6 @@
 # ZCSCommonLibrary
 
-![GitHub top language](https://img.shields.io/github/languages/top/Zandercraft/ZCSCommonLibrary) ![Python package](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Python%20package/badge.svg) ![CodeQL](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/CodeQL/badge.svg) ![PyPi Package Deployment](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Upload%20Python%20Package/badge.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/Zandercraft/ZCSCommonLibrary) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/zcscommonlib) ![Python package](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Python%20package/badge.svg) ![CodeQL](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/CodeQL/badge.svg) ![PyPi Package Deployment](https://github.com/Zandercraft/ZCSCommonLibrary/workflows/Upload%20Python%20Package/badge.svg)
 
 A Common Library For Use In Computer Science Projects
 
