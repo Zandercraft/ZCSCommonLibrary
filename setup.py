@@ -9,7 +9,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
 setup(
     name='zcscommonlib',
     packages=find_packages(include=['zcscommonlib']),
-    version='0.3.1',
+    version='0.3.2',
     description='A Common Library For Use In Computer Science Projects',
     long_description=long_description,
     long_description_content_type="text/markdown",

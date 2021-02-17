@@ -5,7 +5,7 @@
 A Common Library For Use In Computer Science Projects
 
 **PIP Package**: zcscommonlib <br />
-**Current Version:** 0.3.1 <br />
+**Current Version:** 0.3.2 <br />
 **License**: Mozilla Public License Version 2.0
 
 ### Importing The Library
