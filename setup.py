@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 import pypandoc
 
 try:
-    description = pypandoc.convert('README.md', 'rst', 'str')
+    description = pypandoc.convert('README.MD', 'rst', 'str')
 except (IOError, ImportError):
     description = open('README.md').read()
 
