@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 setup(
     name='zcscommonlib',
     packages=find_packages(include=['zcscommonlib']),
-    version='0.2.0',
+    version='0.3.0',
     description='A Common Library For Use In Computer Science Projects',
     author='Zandercraft',
     url='https://github.com/Zandercraft/ZCSCommonLibrary',
@@ -18,9 +18,6 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MPL-2.0 License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.4',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
