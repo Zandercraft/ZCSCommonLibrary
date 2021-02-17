@@ -2,7 +2,7 @@
 
 The ZCSCommonLib library exists as a general library to provide various utilities, generally useful in computer science courses. All are welcome to contribute to the library (through pull requests) and add general (or more complicated) functions to it.
 
-# Get The Library
+### Get The Library
 You can now download the library directly from PyPi (pip) using the following command to include it in your projects.
 
 ```commandline
