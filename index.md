@@ -10,7 +10,7 @@ You can use the following code to import the ZCSCommonLib library to your Python
 from zcscommonlib import functions as fcns
 ```
 
-For more details on how to use the library, see our [documentation here](https://github.com/Zandercraft/ZCSCommonLibrary/wiki).
+For more details on how to use the library, see our [documentation here](https://github.com/Zandercraft/ZCSCommonLibrary/wiki) or our [GitHub repository](https://github.com/Zandercraft/ZCSCommonLibrary).
 
 ### Build The Library
 
