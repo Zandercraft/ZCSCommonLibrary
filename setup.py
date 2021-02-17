@@ -5,7 +5,7 @@ setup(
     packages=find_packages(include=['zcscommonlib']),
     version='0.3.1',
     description='A Common Library For Use In Computer Science Projects',
-    long_description="README.MD",
+    long_description="file:README.MD",
     long_description_content_type="text/markdown",
     author='Zandercraft',
     url='https://github.com/Zandercraft/ZCSCommonLibrary',
