@@ -1,3 +1,15 @@
+#   # ---------------------------------------------------------------- #
+#   |  ░█▀▀░█░█░█▀█░█▀▀░▀█▀░▀█▀░█▀█░█▀█░█▀▀░░░█▄█░█▀█░█▀▄░█░█░█░░░█▀▀  |
+#   |  ░█▀▀░█░█░█░█░█░░░░█░░░█░░█░█░█░█░▀▀█░░░█░█░█░█░█░█░█░█░█░░░█▀▀  |
+#   |  ░▀░░░▀▀▀░▀░▀░▀▀▀░░▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░░░▀░▀░▀▀▀░▀▀░░▀▀▀░▀▀▀░▀▀▀  |
+#   #----------------------------------------------------------------- #
+#   Website: https://commonlib.zandercraft.ca
+#   Documentation: https://github.com/Zandercraft/ZCSCommonLibrary/wiki/Functions-Module
+#   License: Mozilla Public License 2.0
+#   # -------------------------------------------------------------------------------- #
+#   * General utils. Currently the only module, more may be added later.               *
+#   # -------------------------------------------------------------------------------- #
+
 def great_circle(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
     """
     Calculate the great circle distance between two points on the
@@ -17,7 +29,9 @@ def great_circle(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
     # Haversine formula
     km = 6378.8 * (math.acos(math.sin(lat1) * math.sin(lat2) + math.cos(lat1) * math.cos(lat2) * math.cos(lon2 -
                                                                                                           lon1)))
+    # Convert kilometres to metres
     metres = km * 1000
+    # Return the distance in metres
     return metres
 
 
@@ -42,12 +56,16 @@ def month(num: int) -> str:
               "October",
               "November",
               "December"]
-    # Function logic
+    # Check if number given is between 1 and 12
     if 1 <= num <= 12:
+        # Return the name corresponding with that number (minus 1, as Python starts at 0)
         return str(months[num - 1])
+    # The number is not between 1 and 12
     else:
+        # Log error
         logging.error("Incorrect usage of months function in zcscommonlib. Please input a valid integer value between "
                       "1 and 12.")
+        # Exit with non-zero error code
         exit(1)
 
 
@@ -65,6 +83,7 @@ def inputverify(typein: str, inputmsg: str, errormsg: str):
     # Function logic
     while True:
         try:
+            # Grab user's input and try to convert it to the format provided.
             if typein == "str":
                 userin = str(input(inputmsg))
             elif typein == "int":
@@ -73,12 +92,19 @@ def inputverify(typein: str, inputmsg: str, errormsg: str):
                 userin = float(input(inputmsg))
             elif typein == "bool":
                 userin = bool(input(inputmsg))
+            # The developer used an improper format
             else:
+                # Log error
                 logging.error("Incorrect usage of inputverify function in zcscommonlib. Please provide a valid input "
                               "type of 'int', 'float', 'str', or 'bool'.")
+                # Exit with non-zero exit code
                 exit(1)
         except ValueError:
+            # The user did not give an input in the requested format, log provided error message
             print(errormsg)
+            # Get the user's input again
             continue
+        # Proper input was obtained from the user, leave loop
         break
+    # Return the input from the user in the requested format
     return userin

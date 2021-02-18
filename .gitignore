@@ -1,4 +1,15 @@
-# Created by .ignore support plugin (hsz.mobi)
+#   # ----------------------------------------- #
+#   |  ░░░░█▀▀░▀█▀░▀█▀░▀█▀░█▀▀░█▀█░█▀█░█▀▄░█▀▀  |
+#   |  ░░░░█░█░░█░░░█░░░█░░█░█░█░█░█░█░█▀▄░█▀▀  |
+#   |  ░▀░░▀▀▀░▀▀▀░░▀░░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀░▀░▀▀▀  |
+#   #------------------------------------------ #
+#   Website: https://commonlib.zandercraft.ca
+#   Documentation: https://github.com/Zandercraft/ZCSCommonLibrary/wiki/
+#   License: Mozilla Public License 2.0
+#   # -------------------------------------------------------------------------------- #
+#   * .gitignore file for zcscommonlib. Sets files and folders to be ignored by git.   *
+#   # -------------------------------------------------------------------------------- #
+
 ### Python
 # Byte-compiled / optimized / DLL files
 __pycache__/
