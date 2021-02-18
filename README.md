@@ -8,6 +8,8 @@ A Common Library For Use In Computer Science Projects
 **Current Version:** <a href = "https://pypi.org/project/zcscommonlib/"> ![PyPI](https://img.shields.io/pypi/v/zcscommonlib) </a> <br />
 **License**: Mozilla Public License Version 2.0
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md) [![Contribution Guide](https://img.shields.io/badge/Contributions%20Guide-Click%20Here!-limegreen.svg)](CONTRIBUTING.md)
+
 ### Importing The Library
 ```python
 from zcscommonlib import functions as zcs
