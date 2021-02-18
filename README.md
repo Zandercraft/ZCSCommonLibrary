@@ -5,7 +5,7 @@
 A Common Library For Use In Computer Science Projects
 
 **PIP Package**: zcscommonlib <br />
-**Current Version:** <a href = "https://pypi.org/project/zcscommonlib/">![PyPI](https://img.shields.io/pypi/v/zcscommonlib)</a> <br />
+**Current Version:** <a href = "https://pypi.org/project/zcscommonlib/"> ![PyPI](https://img.shields.io/pypi/v/zcscommonlib) </a> <br />
 **License**: Mozilla Public License Version 2.0
 
 ### Importing The Library

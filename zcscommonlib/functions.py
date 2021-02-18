@@ -1,26 +1,24 @@
-def haversine(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
+def great_circle(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
     """
     Calculate the great circle distance between two points on the
-    earth (specified in decimal degrees), returns the distance in
+    earth (decimal degrees), returns the distance in
     meters.
     All arguments must be of equal length.
-    :param lon1: longitude of first place
-    :param lat1: latitude of first place
-    :param lon2: longitude of second place
-    :param lat2: latitude of second place
-    :return: distance in meters between the two sets of coordinates
+    :param lon1: longitude of first point
+    :param lat1: latitude of first point
+    :param lon2: longitude of second point
+    :param lat2: latitude of second point
+    :return: distance in meters between the two sets of co-ords
     """
     # Imports
     import math
-    # Convert decimal degrees to radians
+    # Convert degrees to radians
     lon1, lat1, lon2, lat2 = map(math.radians, [lon1, lat1, lon2, lat2])
     # Haversine formula
-    deltalon = lon2 - lon1
-    deltalat = lat2 - lat1
-    a = math.sin(deltalat / 2.0) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin(deltalon / 2.0) ** 2
-    c = 2 * math.asin(math.sqrt(a))
-    km = 6367 * c
-    return km * 1000
+    km = 6378.8 * (math.acos(math.sin(lat1) * math.sin(lat2) + math.cos(lat1) * math.cos(lat2) * math.cos(lon2 -
+                                                                                                          lon1)))
+    metres = km * 1000
+    return metres
 
 
 def month(num: int) -> str:
@@ -80,7 +78,7 @@ def inputverify(typein: str, inputmsg: str, errormsg: str):
                               "type of 'int', 'float', 'str', or 'bool'.")
                 exit(1)
         except ValueError:
-            logging.error(errormsg)
+            print(errormsg)
             continue
         break
     return userin

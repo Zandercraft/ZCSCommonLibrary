@@ -1,9 +1,9 @@
 from zcscommonlib import functions
 
 
-def test_haversine():
+def test_great_circle():
     # Check if the distance between the specific coordinates match the answer which is already known.
-    assert functions.haversine(52.370216, 4.895168, 52.520008, 13.404954) == 945793.4375088713
+    assert functions.great_circle(52.370216, 4.895168, 52.520008, 13.404954) == 947546.2822650459
 
 
 def test_month():

@@ -1,1 +1,1 @@
-from zcscommonlib.functions import haversine, month, inputverify
+from zcscommonlib.functions import great_circle, month, inputverify
