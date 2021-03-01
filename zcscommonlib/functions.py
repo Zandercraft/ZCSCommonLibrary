@@ -7,39 +7,15 @@
 #   Documentation: https://github.com/Zandercraft/ZCSCommonLibrary/wiki/Functions-Module
 #   License: Mozilla Public License 2.0
 #   # -------------------------------------------------------------------------------- #
-#   * General utils. Currently the only module, more may be added later.               *
+#   * General utilities.                                                               *
 #   # -------------------------------------------------------------------------------- #
-
-def great_circle(lon1: float, lat1: float, lon2: float, lat2: float) -> float:
-    """
-    Calculate the great circle distance between two points on the
-    earth (decimal degrees), returns the distance in
-    meters.
-    All arguments must be of equal length.
-    :param lon1: longitude of first point
-    :param lat1: latitude of first point
-    :param lon2: longitude of second point
-    :param lat2: latitude of second point
-    :return: distance in meters between the two sets of co-ords
-    """
-    # Imports
-    import math
-    # Convert degrees to radians
-    lon1, lat1, lon2, lat2 = map(math.radians, [lon1, lat1, lon2, lat2])
-    # Haversine formula
-    km = 6378.8 * (math.acos(math.sin(lat1) * math.sin(lat2) + math.cos(lat1) * math.cos(lat2) * math.cos(lon2 -
-                                                                                                          lon1)))
-    # Convert kilometres to metres
-    metres = km * 1000
-    # Return the distance in metres
-    return metres
-
 
 def month(num: int) -> str:
     """
     Returns the name of a month (as a string type) from an integer input.
+
     :param num: the number (1-12) of the month wanted
-    :return: the name of the month based on the number
+    :return: the name of the month as a string based on the number provided
     """
     # Imports
     import logging
@@ -69,10 +45,11 @@ def month(num: int) -> str:
         exit(1)
 
 
-def inputverify(typein: str, inputmsg: str, errormsg: str):
+def typedinput(typein: str, inputmsg: str, errormsg: str):
     """
     Gets the input from a user, persisting until the input of the right type is received with an optional input
     message and error message.
+
     :param typein: type of input to require of the user
     :param inputmsg: message to display to the user when getting input
     :param errormsg: message to display when an input of the wrong type is given
@@ -108,3 +85,27 @@ def inputverify(typein: str, inputmsg: str, errormsg: str):
         break
     # Return the input from the user in the requested format
     return userin
+
+
+def palindrome(inputstr: str, isword: bool) -> [bool, str]:
+    """
+    Takes an input, in the form of a string, and checks if it is a palindrome.
+
+    :param inputstr: an input to check in the form of a string
+    :param isword: is the value a single word
+    :return: (bool - is palindrome, str - reversed word if single word)
+    """
+    # Remove all spaces from the input string
+    formattedstr = inputstr.replace(" ", "")
+    # Check if the string in reverse is the same as the normal string
+    if formattedstr[::-1].lower() == formattedstr.lower():
+        if isword:
+            return True, formattedstr[::-1]
+        else:
+            return True
+    # Return false if the string is not a palindrome.
+    else:
+        if isword:
+            return False, formattedstr[::-1]
+        else:
+            return False

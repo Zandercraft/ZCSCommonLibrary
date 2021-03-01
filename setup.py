@@ -25,7 +25,7 @@ setup(
     name='zcscommonlib',
     packages=find_packages(include=['zcscommonlib']),
     # TODO: Make sure to increment this with every version bump
-    version='0.3.4',
+    version='0.3.5',
     description='A Common Library For Use In Computer Science Projects',
     # Set the long description to the README.md file contents
     long_description=description,
@@ -34,7 +34,7 @@ setup(
     # Homepage of the Library
     url='https://commonlib.zandercraft.ca',
     # TODO: Always make sure to update the download url with every version bump
-    download_url='https://github.com/Zandercraft/ZCSCommonLibrary/archive/0.3.4.tar.gz',
+    download_url='https://github.com/Zandercraft/ZCSCommonLibrary/archive/0.3.5.tar.gz',
     # License: Mozilla Public License 2.0
     license='MPL 2.0',
     # Library dependencies

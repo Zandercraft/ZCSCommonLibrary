@@ -1,1 +1,2 @@
-from zcscommonlib.functions import great_circle, month, inputverify
+from zcscommonlib.functions import month, typedinput
+from zcscommonlib.zcsmath import great_circle
