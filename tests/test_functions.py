@@ -26,3 +26,11 @@ def test_palindrome():
     assert functions.palindrome("Racecar", True) == (True, 'racecaR')
     assert functions.palindrome("never a foot too far even", False) is True
     assert functions.palindrome("potato", True) == (False, 'otatop')
+
+
+# Test for the functions.palindromes() function
+def test_palindromes():
+    assert functions.palindromes("racecar") == (1, ['racecar'])
+    assert functions.palindromes("Racecar") == (1, ['Racecar'])
+    assert functions.palindromes("I like racecar madam and a Racecar is good") == (5, ['I', 'racecar', 'madam', 'a',
+                                                                                       'Racecar'])

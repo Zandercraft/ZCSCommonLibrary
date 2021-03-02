@@ -60,7 +60,7 @@ def typedinput(typein: str, inputmsg: str, errormsg: str):
     # Function logic
     while True:
         try:
-            # Grab user's input and try to convert it to the format provided.
+            # Grab user's input and try to convert it to the format provided
             if typein == "str":
                 userin = str(input(inputmsg))
             elif typein == "int":
@@ -100,12 +100,29 @@ def palindrome(inputstr: str, isword: bool) -> [bool, str]:
     # Check if the string in reverse is the same as the normal string
     if formattedstr[::-1].lower() == formattedstr.lower():
         if isword:
-            return True, formattedstr[::-1]
+            return True, formattedstr[::-1]  # TODO: Make compatible with sentences in future release.
         else:
             return True
     # Return false if the string is not a palindrome.
     else:
         if isword:
-            return False, formattedstr[::-1]
+            return False, formattedstr[::-1]  # TODO: Make compatible with sentences in future release.
         else:
             return False
+
+
+def palindromes(inputstr: str) -> (int, [str]):
+    """
+    Takes an input, in the form of a string, and checks how many palindromes are in it. Also returns an array of those
+    palindromes.
+
+    :param inputstr: an input to check in the form of a string
+    :return: (int - number of palindromes, [str, str2...] - palindromes)
+    """
+    words = str.split(inputstr)  # Split the input into an array of the words in it
+    palindrome_array = []
+    # Cycle through all words provided
+    for i in words:
+        if i[::-1].lower() == i.lower():
+            palindrome_array.append(i)  # Add palindromes to the array
+    return len(palindrome_array), palindrome_array
