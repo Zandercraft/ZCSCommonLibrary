@@ -123,7 +123,11 @@ def palindromes(input_str: str) -> (int, [str]):
     palindrome_array = []
     # Cycle through all words provided
     for i in words:
-        if i[::-1].lower() == i.lower():
+        if i[::-1].lower() == i.lower():  # Uses string slicing and a negative index (starts from the end of the string)
+            #                               to reverse the word. The stride of -1 causes the slicing to occur moving
+            #                               backwards. This causes a negative index meaning that it loops to the end of
+            #                               the string. The double-colon denotes that it is the whole string being
+            #                               sliced and that we only care about the negative stride.
             palindrome_array.append(i)  # Add palindromes to the array
     return len(palindrome_array), palindrome_array
 
