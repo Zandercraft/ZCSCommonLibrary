@@ -87,25 +87,25 @@ def typed_input(type_in: str, input_msg: str, error_msg: str):
     return user_in
 
 
-def palindrome(inputstr: str, isword: bool) -> [bool, str]:
+def palindrome(input_str: str, is_word: bool) -> [bool, str]:
     """
     Takes an input, in the form of a string, and checks if it is a palindrome.
 
-    :param inputstr: an input to check in the form of a string
-    :param isword: is the value a single word
+    :param input_str: an input to check in the form of a string
+    :param is_word: is the value a single word
     :return: (bool - is palindrome, str - reversed word if single word)
     """
     # Remove all spaces from the input string
-    formatted_str = inputstr.replace(" ", "")
+    formatted_str = input_str.replace(" ", "")
     # Check if the string in reverse is the same as the normal string
     if formatted_str[::-1].lower() == formatted_str.lower():
-        if isword:
+        if is_word:
             return True, formatted_str[::-1]  # TODO: Make compatible with sentences in future release.
         else:
             return True
     # Return false if the string is not a palindrome.
     else:
-        if isword:
+        if is_word:
             return False, formatted_str[::-1]  # TODO: Make compatible with sentences in future release.
         else:
             return False
