@@ -72,7 +72,7 @@ def typed_input(type_in: str, input_msg: str, error_msg: str):
             # The developer used an improper format
             else:
                 # Log error
-                logging.error("Incorrect usage of inputverify function in zcscommonlib. Please provide a valid input "
+                logging.error("Incorrect usage of input_verify function in zcscommonlib. Please provide a valid input "
                               "type of 'int', 'float', 'str', or 'bool'.")
                 # Exit with non-zero exit code
                 exit(1)
