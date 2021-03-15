@@ -45,14 +45,14 @@ def month(num: int) -> str:
         exit(1)
 
 
-def typedinput(typein: str, inputmsg: str, errormsg: str):
+def typed_input(type_in: str, input_msg: str, error_msg: str):
     """
     Gets the input from a user, persisting until the input of the right type is received with an optional input
     message and error message.
 
-    :param typein: type of input to require of the user
-    :param inputmsg: message to display to the user when getting input
-    :param errormsg: message to display when an input of the wrong type is given
+    :param type_in: type of input to require of the user
+    :param input_msg: message to display to the user when getting input
+    :param error_msg: message to display when an input of the wrong type is given
     :return: input provided from the user in the desired format
     """
     # Imports
@@ -61,14 +61,14 @@ def typedinput(typein: str, inputmsg: str, errormsg: str):
     while True:
         try:
             # Grab user's input and try to convert it to the format provided
-            if typein == "str":
-                userin = str(input(inputmsg))
-            elif typein == "int":
-                userin = int(input(inputmsg))
-            elif typein == "float":
-                userin = float(input(inputmsg))
-            elif typein == "bool":
-                userin = bool(input(inputmsg))
+            if type_in == "str":
+                user_in = str(input(input_msg))
+            elif type_in == "int":
+                user_in = int(input(input_msg))
+            elif type_in == "float":
+                user_in = float(input(input_msg))
+            elif type_in == "bool":
+                user_in = bool(input(input_msg))
             # The developer used an improper format
             else:
                 # Log error
@@ -78,13 +78,13 @@ def typedinput(typein: str, inputmsg: str, errormsg: str):
                 exit(1)
         except ValueError:
             # The user did not give an input in the requested format, log provided error message
-            print(errormsg)
+            print(error_msg)
             # Get the user's input again
             continue
         # Proper input was obtained from the user, leave loop
         break
     # Return the input from the user in the requested format
-    return userin
+    return user_in
 
 
 def palindrome(inputstr: str, isword: bool) -> [bool, str]:
@@ -96,33 +96,44 @@ def palindrome(inputstr: str, isword: bool) -> [bool, str]:
     :return: (bool - is palindrome, str - reversed word if single word)
     """
     # Remove all spaces from the input string
-    formattedstr = inputstr.replace(" ", "")
+    formatted_str = inputstr.replace(" ", "")
     # Check if the string in reverse is the same as the normal string
-    if formattedstr[::-1].lower() == formattedstr.lower():
+    if formatted_str[::-1].lower() == formatted_str.lower():
         if isword:
-            return True, formattedstr[::-1]  # TODO: Make compatible with sentences in future release.
+            return True, formatted_str[::-1]  # TODO: Make compatible with sentences in future release.
         else:
             return True
     # Return false if the string is not a palindrome.
     else:
         if isword:
-            return False, formattedstr[::-1]  # TODO: Make compatible with sentences in future release.
+            return False, formatted_str[::-1]  # TODO: Make compatible with sentences in future release.
         else:
             return False
 
 
-def palindromes(inputstr: str) -> (int, [str]):
+def palindromes(input_str: str) -> (int, [str]):
     """
     Takes an input, in the form of a string, and checks how many palindromes are in it. Also returns an array of those
     palindromes.
 
-    :param inputstr: an input to check in the form of a string
+    :param input_str: an input to check in the form of a string
     :return: (int - number of palindromes, [str, str2...] - palindromes)
     """
-    words = str.split(inputstr)  # Split the input into an array of the words in it
+    words = str.split(input_str)  # Split the input into an array of the words in it
     palindrome_array = []
     # Cycle through all words provided
     for i in words:
         if i[::-1].lower() == i.lower():
             palindrome_array.append(i)  # Add palindromes to the array
     return len(palindrome_array), palindrome_array
+
+
+def random_value(array: list) -> str:
+    """
+    Takes an array as an input and returns a random value from that list.
+    :param array: an array to retrieve the value from
+    :return: a random value from the array
+    """
+    from random import random
+    random_index = int(random() * len(array))
+    return array[random_index]

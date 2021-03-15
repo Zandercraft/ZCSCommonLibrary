@@ -34,3 +34,8 @@ def test_palindromes():
     assert functions.palindromes("Racecar") == (1, ['Racecar'])
     assert functions.palindromes("I like racecar madam and a Racecar is good") == (5, ['I', 'racecar', 'madam', 'a',
                                                                                        'Racecar'])
+
+
+# Test for functions.random_value function
+def test_random_value():
+    assert functions.random_value(['value1', 'value2', 'value3']) == 'value1' or 'value2' or 'value3'

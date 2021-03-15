@@ -25,7 +25,7 @@ setup(
     name='zcscommonlib',
     packages=find_packages(include=['zcscommonlib']),
     # TODO: Make sure to increment this with every version bump
-    version='0.3.5',
+    version='0.3.6',
     description='A Common Library For Use In Computer Science Projects',
     # Set the long description to the README.md file contents
     long_description=description,
